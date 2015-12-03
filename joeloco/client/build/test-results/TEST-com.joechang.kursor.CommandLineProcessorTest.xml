@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.joechang.kursor.CommandLineProcessorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-10-28T23:38:26" hostname="JCT440s" time="2.12">
+  <properties/>
+  <testcase name="testCommandLine" classname="com.joechang.kursor.CommandLineProcessorTest" time="2.12"/>
+  <system-out><![CDATA[---> HTTP GET http://joelo.co:8080/yelp?what=haircut&where=mission
+<--- HTTP 200 http://joelo.co:8080/yelp?what=haircut&where=mission (1968ms)
+Sending to 4155046106:
+1. Laura's Beauty & Barber Shop
+   ★★★★½ 83 reviews
+   2858 24th St & Bryant St
+   415-282-9995
+2. Angelica's Hair Salon
+   ★★★★½ 45 reviews
+   963 Valencia St & 21st St
+   415-970-1546
+3. Lee Hong Hair Styling
+   ★★★★½ 67 reviews
+   3107 16th St & Valencia St
+   415-626-1582
+
+
+]]></system-out>
+  <system-err><![CDATA[Oct 28, 2015 4:38:25 PM com.joechang.loco.Configuration readConfigurationFrom
+INFO: Reading resource: {}configuration.properties
+Oct 28, 2015 4:38:26 PM com.joechang.loco.utils.Stopwatch log
+INFO: 1446075506207:Processing message: 1446075506193, assumed from: [415-504-6106]
+Oct 28, 2015 4:38:26 PM com.joechang.loco.utils.Stopwatch start
+INFO: Starting timer for: BodyProcessing
+Oct 28, 2015 4:38:26 PM com.joechang.kursor.AbstractCliBodyProcessor processBody
+INFO: Did not find @history\s*(\d*) within @yelp haircut in mission hasPhrase: false
+Oct 28, 2015 4:38:26 PM com.joechang.kursor.AbstractCliBodyProcessor processBody
+INFO: Did not find (?:@rez|@opentable)(\d*) within @yelp haircut in mission hasPhrase: false
+Oct 28, 2015 4:38:26 PM com.joechang.kursor.AbstractCliBodyProcessor processBody
+INFO: Did not find (?:@gif|@giphy|@sticker) within @yelp haircut in mission hasPhrase: false
+Oct 28, 2015 4:38:26 PM com.joechang.loco.utils.Stopwatch stop
+INFO: Ending timer for: BodyProcessing duration: 29ms.
+Oct 28, 2015 4:38:28 PM com.joechang.kursor.commands.YelpCliBodyProcessor$1 success
+INFO: Sending text [1. Laura's Beauty & Barber Shop
+   ★★★★½ 83 reviews
+   2858 24th St & Bryant St
+   415-282-9995, 2. Angelica's Hair Salon
+   ★★★★½ 45 reviews
+   963 Valencia St & 21st St
+   415-970-1546, 3. Lee Hong Hair Styling
+   ★★★★½ 67 reviews
+   3107 16th St & Valencia St
+   415-626-1582] to [4155046106]
+]]></system-err>
+</testsuite>

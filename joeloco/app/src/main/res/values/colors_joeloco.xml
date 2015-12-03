@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="joeloco_color">#ff8800</color>
+
+    <!-- some initial colors -->
+    <color name="main_blue">#28b5f5</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#757575</color>
+
+    <!-- Signature Colors -->
+    <color name="orange">#f2552c</color>
+    <color name="black">#111125</color>
+    <color name="light_gray">#ececec</color>
+    <color name="dark_gray">#9f9fa9</color>
+
+</resources>

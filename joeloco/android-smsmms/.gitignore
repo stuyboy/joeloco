@@ -1,0 +1,7 @@
+.gradle/
+.idea/
+build/
+gen/
+*.iml
+module_android-smsmms.xml
+local.properties

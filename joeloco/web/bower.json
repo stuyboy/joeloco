@@ -1,0 +1,33 @@
+{
+  "name": "yourloco",
+  "version": "0.0.1",
+  "author": "Andrew Potapov (apotapov@gmail.com)",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.4.0",
+    "angular-cookies": "1.4.0",
+    "angular-resource": "1.4.0",
+    "angular-ui-router": "0.2.15",
+    "angularfire": "1.1.1",
+    "angularjs-geolocation": "0.1.1",
+    "angular-leaflet-directive": "0.8.2",
+    "angular-moment": "0.10.1",
+    "angulartics": "0.18.0",
+    "angular-uuid4": "0.3.0",
+    "bootstrap": "3.3.4",
+    "firebase": "2.2.6",
+    "geofire": "3.2.2",
+    "jquery": "2.1.4",
+    "leaflet": "0.7.3",
+    "lodash": "3.9.3"
+  }
+}
+
+

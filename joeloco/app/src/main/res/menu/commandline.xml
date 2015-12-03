@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item android:id="@+id/action_clear" android:title="@string/action_clear" app:showAsAction="withText|ifRoom" />
+    <item android:id="@+id/action_sharelocation" android:title="@string/action_sharelocation" app:showAsAction="withText|ifRoom" />
+    <item android:id="@+id/action_changesmsapp" android:title="Default SMS App" app:showAsAction="withText|ifRoom"/>
+    <item android:id="@+id/action_testGroupMMS" android:title="Send test MMS" app:showAsAction="withText|ifRoom"/>
+</menu>

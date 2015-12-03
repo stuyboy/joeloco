@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.joechang.loco">
+
+    <!-- Versioning -->
+    <uses-sdk android:minSdkVersion="14"/>
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <!-- Maps Required -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- Phone -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- Background service -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- For sending texts -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+            android:name="android.support.multidex.MultiDexApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:logo="@drawable/ic_joeloco"
+            android:label="@string/app_name"
+            android:theme="@style/joeloco">
+
+        <!-- Necessary Metadata for init -->
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version"/>
+        <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyDbY0wSOCSOzhgM_R8nqKEZ-WAfFpMf4sg"/>
+        <!-- Identity toolkit stuff -->
+        <meta-data
+                android:name="identitytoolkit.show_providers"
+                android:value="Google, Facebook"/>
+        <!-- Use the apiKey for android applications here -->
+        <meta-data
+                android:name="identitytoolkit.api_key"
+                android:value="AIzaSyDbY0wSOCSOzhgM_R8nqKEZ-WAfFpMf4sg"/>
+        <!-- Use the clientId for web applications here -->
+        <meta-data
+                android:name="identitytoolkit.server_client_id"
+                android:value="953002196823-88vddtd0m3f0u84vm2kh1a7rmu4sagr0.apps.googleusercontent.com"/>
+        <meta-data
+                android:name="identitytoolkit.server_widget_url"
+                android:value="http://localhost/callback"/>
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/fb_app_id"/>
+
+
+        <!-- Activities -->
+        <activity
+                android:name="com.joechang.loco.LoginActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                        android:host="gitkit"
+                        android:scheme="com.googleusercontent.apps.953002196823-88vddtd0m3f0u84vm2kh1a7rmu4sagr0"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity"
+                  android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".UsersMapActivity"
+                  android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".DebugActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:parentActivityName=".HomeActivity"/>
+        <!-- Hide pop-up keyboard -->
+
+        <activity android:name="com.facebook.LoginActivity"/>
+        <activity android:name=".SettingsActivity" android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".ProfileActivity"
+                  android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".GroupsActivity"
+                  android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".RealtimeActivity"
+                  android:parentActivityName=".HomeActivity">
+            <intent-filter android:label="@string/DeepLinkMapName">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="http"
+                      android:host="joelo.co"
+                      android:port="8080"
+                      android:pathPrefix="@string/realtimeMapURL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:label="@string/WebLinkMapName">
+                <action android:name="andorid.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="joelo.co" android:host="realtime"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MagnetActivity"/>
+        <activity android:name=".GridViewActivity"/>
+        <activity android:name=".FullScreenViewActivity"/>
+        <activity android:name=".EventEntryActivity"/>
+        <activity android:name=".ChooseContactActivity"/>
+
+        <activity android:name=".sms.MmsDebugActivity"/>
+
+        <!-- Deeplinking capability -->
+        <!--
+        <activity android:name=".ParseDeepLinkActivity">
+            <intent-filter>
+                <action android:name="com.google.android.apps.plus.VIEW_DEEP_LINK" />
+                <data android:scheme="vnd.google.deeplink" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>golf
+        -->
+
+        <service android:name="com.android.mms.transaction.TransactionService"/>
+        <service
+                android:name="com.joechang.loco.service.LocationPublishService"
+                android:enabled="true"
+                android:exported="false">
+        </service>
+        <service android:name=".service.SendLocationService" android:exported="false"/>
+        <service android:name=".service.MMSSenderService" android:exported="false" android:process=":background"/>
+        <service android:name="com.joechang.kursor.service.NotificationSenderService" android:exported="false" android:process=":background"/>
+
+        <receiver android:name="com.joechang.loco.service.StartupReceiver"
+                  android:enabled="true"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.joechang.kursor.sms.SmsCommandLineService" android:exported="false" android:process=":background"/>
+        <service android:name="com.joechang.kursor.sms.MmsCommandLineService" android:exported="false" android:process=":background"/>
+
+        <!-- Primary receiver for incoming SMS messages -->
+        <receiver android:name=".sms.SmsMessageReceiver"
+                  android:permission="android.permission.BROADCAST_SMS"
+                  android:enabled="true"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+            </intent-filter>
+        </receiver>
+
+        <!-- MMS Messages are handled by the MMSCommandLineService as a Broadcast Receiver -->
+        <!--
+        <receiver android:name=".sms.MmsMessageReceiver"
+                  android:permission="android.permission.BROADCAST_WAP_PUSH"
+                  android:enabled="true"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+            <intent-filter android:priority="1001">
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <!-- DUMMY TO REGISTER APP AS DEFAULT SMS APP -->
+        <!--
+        <activity android:name=".DummyActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- QUICK HACK TO TRY TO BE DEFAULT SMS APP -->
+        <!--
+        <service android:name=".service.DummyService"
+                 android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
+                 android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+        -->
+
+        <!-- Widget -->
+        <activity android:name=".widget.LocoWidgetConfigure" android:parentActivityName=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.joechang.loco.widget.LocoWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/locowidget_info"/>
+        </receiver>
+
+    </application>
+
+</manifest>

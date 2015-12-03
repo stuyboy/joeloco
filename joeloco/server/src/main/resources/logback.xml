@@ -1,0 +1,92 @@
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <property name="LOG_HOME" value="logs"/>
+    <property name="USER_LOG_HOME" value="userlogs"/>
+
+    <timestamp key="byDay" datePattern="yyyyMMdd'T'HHmmss"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/locoServer.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover. Make sure the path matches the one in the file element or else
+             the rollover logs are placed in the working directory. -->
+            <fileNamePattern>${LOG_HOME}/locoServer_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+
+            <!-- Max filesize Policy -->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>5MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d %-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="SIFTED_FILE" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <!-- This is MDC value: We will assign a value to 'userId' via Java code -->
+        <discriminator>
+            <key>userId</key>
+            <defaultValue>null</defaultValue>
+        </discriminator>
+
+        <sift>
+            <!-- A standard RollingFileAppender, the log file is based on 'logFileName' at runtime  -->
+            <appender name="userLoc-${userId}"
+                      class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${USER_LOG_HOME}/userLoc-${userId}.log</file>
+
+                <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                    <Pattern>
+                        %d{yyyy-MM-dd HH:mm:ss} %mdc [%thread] %level %logger{35} - %msg%n
+                    </Pattern>
+                </encoder>
+
+                <rollingPolicy
+                        class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+                    <FileNamePattern>
+                        ${USER_LOG_HOME}/userLoc-${userId}.%i.log.zip
+                    </FileNamePattern>
+                    <MinIndex>1</MinIndex>
+                    <MaxIndex>10</MaxIndex>
+                </rollingPolicy>
+
+                <triggeringPolicy
+                        class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+                    <MaxFileSize>10MB</MaxFileSize>
+                </triggeringPolicy>
+            </appender>
+        </sift>
+    </appender>
+
+    <appender name="ASYNC_SIFTED" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="SIFTED_FILE"/>
+    </appender>
+
+    <logger name="com.joechang" level="debug" additivity="false">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="com.joechang.loco.logging.LogLocationEntry" level="info" additivity="true">
+        <appender-ref ref="ASYNC_SIFTED"/>
+    </logger>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>

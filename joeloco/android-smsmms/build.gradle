@@ -1,0 +1,41 @@
+apply plugin: 'android-library'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.klinkerapps:logger:+'
+    compile 'com.koushikdutta.ion:ion:1.1.7'
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "6g"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}

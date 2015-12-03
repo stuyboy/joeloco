@@ -1,0 +1,4 @@
+2015-05-13 10:31:59,222 832  [main] INFO  com.joechang.loco.Application - Starting Application on JCT440s with PID 5146 (/home/joechang/dev/joeloco/loco/server/locoServer-0.1.0.jar started by joechang in /home/joechang/dev/joeloco/loco/server/bin)
+2015-05-13 10:31:59,226 836  [main] DEBUG com.joechang.loco.Application - Running with Spring Boot v1.2.3.RELEASE, Spring v4.1.6.RELEASE
+2015-05-13 10:32:03,866 5476 [main] INFO  com.joechang.loco.Application - Started Application in 4.956 seconds (JVM running for 5.792)
+2015-05-13 10:32:51,869 53479 [http-nio-3000-exec-1] INFO  c.j.loco.logging.LogLocationEntry - {"latitude":3232.0,"longitude":323232.0,"userId":"43243244332","timeStamp":1431538371824}

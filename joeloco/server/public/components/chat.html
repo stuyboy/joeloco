@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello React!</title>
+    <script src="http://fb.me/react-0.13.3.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.13.3.js"></script>
+
+    <!-- Firebase & ReactFire-->
+    <script src="https://cdn.firebase.com/js/client/2.2.6/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/reactfire/0.4.0/reactfire.min.js"></script>
+
+    <link href="../css/chat.css" rel="stylesheet">
+</head>
+<body>
+<div id="content"></div>
+</body>
+<!-- To be later included in a .js file -->
+<script type="text/jsx" src="/js/react/chat.js"></script>
+
+<script type="text/jsx">
+    React.render(<ChatApp url="https://joeloco.firebaseio.com/chats/31231232/messages" />, document.getElementById("content"));
+</script>
+
+</html>

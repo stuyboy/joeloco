@@ -1,0 +1,64 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #000;
+    margin: 0px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height:100%;
+}
+
+#downloadApp {
+    float: right;
+    outline: 1px solid white;
+    padding: 15px 15px 15px 15px;
+    margin: 20px 20px 20px 20px;
+}
+
+#rtMapTopBar {
+    display: none;
+}
+
+#rtMapTitle {
+    float: left;
+    color: #219ab3;
+    font-weight: bold;
+    outline: 0px;
+    padding: 15px 15px 15px 15px;
+    margin: 18px 18px 18px 18px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #000;
+    filter: alpha(opacity=65);
+    -moz-opacity: 0.65;
+    opacity: 0.65;
+    z-index: 1000;
+    display: none;
+}
+
+#overlay span {
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    position:relative;
+    top:45%;
+    font-size: 200%;
+    text-shadow: black 0.2em 0.2em 0.3em;
+}

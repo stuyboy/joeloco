@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.joechang.loco.client.LogLocationClientTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-10-28T23:38:28" hostname="JCT440s" time="0.163">
+  <properties/>
+  <testcase name="testCall" classname="com.joechang.loco.client.LogLocationClientTest" time="0.163"/>
+  <system-out><![CDATA[---> HTTP POST http://joelo.co:8080/users/testUser/location
+<--- HTTP 200 http://joelo.co:8080/users/testUser/location (109ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

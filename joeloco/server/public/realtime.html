@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Firebase & ReactFire-->
+    <script src="https://cdn.firebase.com/js/client/2.2.6/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/geofire/3.2.2/geofire.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/reactfire/0.4.0/reactfire.min.js"></script>
+
+    <!-- GeoFire required -->
+    <script src="http://rsvpjs-builds.s3.amazonaws.com/rsvp-latest.min.js"></script>
+
+    <!-- Leaflet -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+    <!-- Local firebase operatins -->
+    <script src="js/firebase.js"></script>
+    <script src="js/qsUtils.js"></script>
+
+    <link href="css/rtMap.css" rel="stylesheet">
+    <link href="css/chat.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+    <title>Realtime Map</title>
+
+</head>
+<body>
+<!-- Header -->
+<div id="rtMapTopBar">
+    <span id="rtMapTitle">
+        Realtime Map
+    </span>
+
+    <span id="downloadApp">
+        Download App
+    </span>
+</div>
+
+<!-- Map Section is Body -->
+<div id="overlay">
+    <span id="overlayText">
+    </span>
+</div>
+
+<div id="map"></div>
+
+<!-- Essentially a footer -->
+<div id="chat"/>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- For device detection -->
+<script type='text/javascript' src="http://wurfl.io/wurfl.js"></script>
+
+<!-- Required for geolocation via browser -->
+<script src="js/geometa.js"></script>
+
+<!-- JS For this page -->
+<script src="js/rtMap.js"></script>
+
+<!-- Logic to query -->
+<script src="js/realtimeFB.js"></script>
+
+<!-- Experimental chat -->
+<!-- script src="http://fb.me/react-0.13.3.js"></script>
+<script type="text/jsx" src="/js/react/chat.js"></script>
+<script src="http://fb.me/JSXTransformer-0.13.3.js"></script -->
+<!-- script type="text/jsx">
+   var qGroupId = qs["groupId"];
+   var qEventId = qs["eventId"];
+   var chatSessionId = 'openChat';
+
+   if (typeof qEventId !== 'undefined') {
+      chatSessionId = qEventId;
+   } else if (typeof qGroupId !== 'undefined') {
+      chatSessionId = qGroupId;
+   }
+
+   var chatRef = "https://joeloco.firebaseio.com/chats/" + chatSessionId + "/messages";
+
+    //Not ready yet.
+    React.render(<ChatApp url={ chatRef } />, document.getElementById("chat"));
+</script -->
+
+</body>
+
+
+
+</html>

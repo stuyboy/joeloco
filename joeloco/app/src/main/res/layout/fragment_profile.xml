@@ -1,0 +1,90 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="left|top"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_picture_view"
+            android:minHeight="90dp"
+            android:minWidth="90dp"
+            android:layout_margin="10dp" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/NonEditable"
+                    android:text="@string/profile_name"
+                    android:id="@+id/profile_full_name" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/NonEditable"
+                    android:id="@+id/profile_email" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/NonEditable"
+                    android:text="@string/profile_phone"
+                    android:id="@+id/profile_phone_number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/NonEditable"
+                    android:id="@+id/profile_member_since" />
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/action_save"
+            android:id="@+id/profile_button"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/action_logout"
+            android:id="@+id/logout_button"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+</TableLayout>
+

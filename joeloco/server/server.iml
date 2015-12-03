@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":server" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="loco" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/build" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/joechang/loco/Application.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/joechang/loco/config/ServerConfig.java</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":server" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
+    <orderEntry type="module" module-name="model" exported="" />
+    <orderEntry type="module" module-name="client" exported="" />
+    <orderEntry type="library" exported="" name="gitkitclient-1.2.2" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-starter-actuator-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-starter-web-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-starter-security-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="guava-18.0" level="project" />
+    <orderEntry type="library" exported="" name="google-api-client-1.20.0" level="project" />
+    <orderEntry type="library" exported="" name="google-oauth-client-jetty-1.20.0" level="project" />
+    <orderEntry type="library" exported="" name="scribe-1.3.5" level="project" />
+    <orderEntry type="library" exported="" name="json-simple-1.1" level="project" />
+    <orderEntry type="library" exported="" name="retrofit-1.9.0" level="project" />
+    <orderEntry type="library" exported="" name="okhttp-2.4.0" level="project" />
+    <orderEntry type="library" exported="" name="jsoup-1.7.2" level="project" />
+    <orderEntry type="library" exported="" name="natty-0.11" level="project" />
+    <orderEntry type="library" exported="" name="commons-codec-1.6" level="project" />
+    <orderEntry type="library" exported="" name="jackson-core-asl-1.9.13" level="project" />
+    <orderEntry type="library" exported="" name="json-20140107" level="project" />
+    <orderEntry type="library" exported="" name="jsontoken-1.1" level="project" />
+    <orderEntry type="library" exported="" name="jsr107cache-1.1" level="project" />
+    <orderEntry type="library" exported="" name="joda-time-2.0" level="project" />
+    <orderEntry type="library" exported="" name="tomcat-servlet-api-8.0.12" level="project" />
+    <orderEntry type="library" exported="" name="mockito-all-1.9.5" level="project" />
+    <orderEntry type="library" exported="" name="junit-4.11" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-starter-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-actuator-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-core-4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-starter-tomcat-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="jackson-databind-2.4.5" level="project" />
+    <orderEntry type="library" exported="" name="hibernate-validator-5.1.3.Final" level="project" />
+    <orderEntry type="library" exported="" name="spring-web-4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-webmvc-4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-beans-4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-context-4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-expression-4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-security-config-3.2.7.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-security-web-3.2.7.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-aop-4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="google-oauth-client-1.20.0" level="project" />
+    <orderEntry type="library" exported="" name="google-http-client-jackson2-1.20.0" level="project" />
+    <orderEntry type="library" exported="" name="guava-jdk5-13.0" level="project" />
+    <orderEntry type="library" exported="" name="google-oauth-client-java6-1.20.0" level="project" />
+    <orderEntry type="library" exported="" name="jetty-6.1.26" level="project" />
+    <orderEntry type="library" exported="" name="okio-1.4.0" level="project" />
+    <orderEntry type="library" exported="" name="antlr-runtime-3.5.2" level="project" />
+    <orderEntry type="library" exported="" name="ical4j-1.0.2" level="project" />
+    <orderEntry type="library" exported="" name="httpclient-4.0.1" level="project" />
+    <orderEntry type="library" exported="" name="servlet-api-2.5" level="project" />
+    <orderEntry type="library" exported="" name="httpcore-4.0.1" level="project" />
+    <orderEntry type="library" exported="" name="hamcrest-core-1.3" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-autoconfigure-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="spring-boot-starter-logging-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="snakeyaml-1.14" level="project" />
+    <orderEntry type="library" exported="" name="tomcat-embed-core-8.0.20" level="project" />
+    <orderEntry type="library" exported="" name="tomcat-embed-el-8.0.20" level="project" />
+    <orderEntry type="library" exported="" name="tomcat-embed-logging-juli-8.0.20" level="project" />
+    <orderEntry type="library" exported="" name="tomcat-embed-websocket-8.0.20" level="project" />
+    <orderEntry type="library" exported="" name="validation-api-1.1.0.Final" level="project" />
+    <orderEntry type="library" exported="" name="jboss-logging-3.1.3.GA" level="project" />
+    <orderEntry type="library" exported="" name="classmate-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="aopalliance-1.0" level="project" />
+    <orderEntry type="library" exported="" name="spring-security-core-3.2.7.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="google-http-client-1.20.0" level="project" />
+    <orderEntry type="library" exported="" name="jsr305-1.3.9" level="project" />
+    <orderEntry type="library" exported="" name="jetty-util-6.1.26" level="project" />
+    <orderEntry type="library" exported="" name="servlet-api-2.5-20081211" level="project" />
+    <orderEntry type="library" exported="" name="commons-logging-1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="commons-lang-2.6" level="project" />
+    <orderEntry type="library" exported="" name="backport-util-concurrent-3.1" level="project" />
+    <orderEntry type="library" exported="" name="jcl-over-slf4j-1.7.11" level="project" />
+    <orderEntry type="library" exported="" name="jul-to-slf4j-1.7.11" level="project" />
+    <orderEntry type="library" exported="" name="log4j-over-slf4j-1.7.11" level="project" />
+    <orderEntry type="library" exported="" name="logback-classic-1.1.3" level="project" />
+    <orderEntry type="library" exported="" name="logback-core-1.1.3" level="project" />
+    <orderEntry type="library" exported="" name="gson-2.3.1" level="project" />
+    <orderEntry type="library" exported="" name="jackson-annotations-2.4.0" level="project" />
+    <orderEntry type="library" exported="" name="slf4j-api-1.7.11" level="project" />
+    <orderEntry type="library" exported="" name="jackson-core-2.4.5" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="spring-boot-starter-test-1.2.3.RELEASE" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="junit-4.12" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="mockito-core-1.10.19" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="hamcrest-library-1.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="spring-test-4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="objenesis-2.1" level="project" />
+  </component>
+</module>

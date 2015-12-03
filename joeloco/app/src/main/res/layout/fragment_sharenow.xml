@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="0dp">
+
+    <!-- Main Content View based on selection -->
+    <FrameLayout
+            android:id="@+id/sharenow_content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+    <Button android:id="@+id/button_sharenow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send 20"
+            android:padding="0dp"/>
+
+</LinearLayout>

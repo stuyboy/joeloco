@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.sothree.slidinguppanel/library/3.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c1200ab3b93b8f42c0878b00eb79a84c1f112cf7">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-991c005b352681b5408074e319642fdf2cb4be98.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.0.1/1261dfca5bae89a866a2855552da26feab7f8fad/dagger-2.0.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1261dfca5bae89a866a2855552da26feab7f8fad">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/dagger-2.0.1-90f37de9406d07491e7ef4b4637c43cbccf51a27.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/dev/debug/classes-b5c287bff4abbb009e4cbe7c1569ce91f64a7d6c.jar/classes.dex" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.5/77bf7cacf9cefe19dc105e5425d2eb1bb5285881/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-4180eae3f13432541a60860d234f7b5fdee2886a.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.2.4/d952dbeacf5269df1d2d2321cdbb165dc37c82b3/firebase-client-android-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d952dbeacf5269df1d2d2321cdbb165dc37c82b3">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/firebase-client-android-2.2.4-005029c90a5549cd2ed061652cd96521fd403503.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.doomonafireball.betterpickers/library/1.5.5/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="54e685289fe062eaf5f3c9bc2df3b1f48cd562d7">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-fd1795e3580708d7fe7606612f3a7a61cb3bc535.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/client/build/libs/locoClient-0.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d8512701cd79c7fc442407cf920e2f1ae17876c0">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/dev/debug/locoClient-0.1.0-13d6508c08a85fe97e346a1acd0da29bc4520898.jar/classes.dex" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c2071dcaf7a008c3b01a6381a33be55396bab09">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-2bce175476ad99afcc28f6f2ede0d0114bf9a2f9.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/identitytoolkit-api11/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="caad47ad73cff588dcd3ce881668eb1e5cc5ab6f">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-362019ae91535800d8e39c194ed076e329aa218d.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/libs/identitytoolkit_fb.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9dff3162faa7134306a3b5ae49ba8705daf2685c">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/identitytoolkit_fb-85d2172d50407b7b587154cf286a74571aebe353.jar" />
+    </item>
+    <item
+        jar="/home/joechang/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-8564ef113aafce15c36bc27d4ba5b0b0b04fbb05.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/org.jraf/android-switch-backport/1.4.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5be6154ea591aedafe737f93b365818681a9e305">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-c71a07664d855487e9f1115e4330d3e4a3ac754d.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-c51529fb5bd98f57a4f8ba4592d4a9034ca9777d.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0dcc55e70f7ebf7238fe2ec53f662eb378ab2668">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-cd635212b9436d607f580d5b3735dd095060f4be.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.2.4/b797b9bfb5edb54473a55ece366ead72102803bc/firebase-client-jvm-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b797b9bfb5edb54473a55ece366ead72102803bc">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/firebase-client-jvm-2.2.4-769a0e132d7670936ddf431d9a3926de4eac420b.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.firebase/geofire/1.1.0/d746bd9d89641dc841d2299c59d6e9a9eb8e98e9/geofire-1.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d746bd9d89641dc841d2299c59d6e9a9eb8e98e9">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/geofire-1.1.0-49af9aae58748720deffa8d95c16b11a97ed7bf1.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66236ebe4d86dafbfc30b4fd7e5917ba2a645b35">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-5ba981c8009669cece0bb72048afe8bbc85ef3f1.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/javax.inject-1-f7bcb5a3068016268aa41aa1bf60c958c0f975d5.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-49f96a1943469187cc8a3dac4734e0ff3c9d5508.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-compiler/2.0.1/17af13dff7ee290dff99fd97385f40f20b20d7d7/dagger-compiler-2.0.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17af13dff7ee290dff99fd97385f40f20b20d7d7">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/dagger-compiler-2.0.1-11889bb5500da48890236a99c5cf734bb60e6664.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.4.0/5b72bf48563ea8410e650de14aa33ff69a3e8c35/okio-1.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/okio-1.4.0-aa79e819ba4fa5b9c1cfcbcda1bbd7d8074d3718.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.2.2-d3bef582e5270113736bfb8131e45b83403aa7d2.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.2-a820ec099a5fd0c4a896f7cb9dbd7f870c6b69cf.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/gson-2.3.1-981d7ac0a01aa978f0af9db3b7e7898c232dbbc9.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/guava-18.0-77163b76964d78a6b095226b4ae03ea60fb8e38e.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/model/build/libs/locoModel-0.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2823160639c85a6e1eaca89bcf3dc1bd77877a4e">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/dev/debug/locoModel-0.1.0-93a3660437dedd8e565355c420d43848be07d211.jar/classes.dex" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-producers/2.0-beta/80276338d1c2542ebebac542b535d1ecd48a3fd7/dagger-producers-2.0-beta.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="80276338d1c2542ebebac542b535d1ecd48a3fd7">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/dagger-producers-2.0-beta-ef27167aaf7e2927ad5a7c76aee7d672b8709583.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/jackson-databind-2.2.2-c16d9a455a79e343705e30b804bee897e8e73dfb.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.4.0/40340c0748190fe897baf7bffbc1b282734294e5/okhttp-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/okhttp-2.4.0-6c1575e8d1ba39e9bbb0d710fde87186771e497f.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-70c8c282ae0345effaf32b1e6e063dfc77410150.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/library-2.4.0-38f04fc8411a3b716021d2096a1b3c3782e3d63d.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-960e33baf23b2bdc9b6d1c9723d53c6b7311ffde.jar" />
+    </item>
+    <item
+        jar="/home/joechang/dev/joeloco/loco/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/classes-55d956638b504497040d34098c8656d706b20050.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/commons-io-2.4-58fcb350026550c9ba3529f4ccfa78a43daac9fc.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-1f102173e2053f363df7863304d32bf221425ac5.jar" />
+    </item>
+    <item
+        jar="/home/joechang/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.11/d37cb67277928cf59344b4196af8d9cee1f1a27c/tubesock-0.0.11.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="/home/joechang/dev/joeloco/loco/app/build/intermediates/pre-dexed/debug/tubesock-0.0.11-e0487777d8270b2d8577d3bd9bc250e38cfa29af.jar" />
+    </item>
+
+</items>

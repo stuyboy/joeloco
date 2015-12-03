@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+    }
+}
+
+jar {
+    baseName = 'locoServer'
+    version = '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':model')
+    compile project(':client')
+    compile 'com.google.identitytoolkit:gitkitclient:1.2.2'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+    compile 'com.google.api-client:google-api-client:1.20.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.20.0'
+    compile 'org.scribe:scribe:1.3.5'
+    compile 'com.googlecode.json-simple:json-simple:1.1'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'org.jsoup:jsoup:1.7.2'
+    compile ('com.joestelmach:natty:0.11')
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'junit:junit'
+}

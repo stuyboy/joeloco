@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">joelo.co</string>
+    <string name="title_home">Upcoming</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_groups">Groups</string>
+    <string name="title_activity_main">Nearby</string>
+    <string name="title_activity_nearby">Nearby</string>
+    <string name="title_browse">Browse</string>
+    <string name="title_find">Find</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_users">Users</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_post">Camera</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_sharelocation">Send Location</string>
+    <string name="action_beacon">Beacon</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_close">Close</string>
+    <string name="action_new">New</string>
+    <string name="action_add">Add</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="action_edit_members">Edit Members</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="sign_out_label">Sign Out</string>
+    <string name="profile_picture_desc">Profile Picture</string>
+
+    <string name="dialog_enter_new">Enter New</string>
+    <string name="dialog_choose">Choose entries to add</string>
+
+    <string name="profile_name">Name</string>
+    <string name="profile_phone">Phone Number</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fb_app_id">330349763819083</string>
+    <string name="fb_test_app_id">378952992292093</string>
+
+    <!-- Deep Linking Titles -->
+    <string name="DeepLinkMapName">Realtime Map</string>
+    <string name="WebLinkMapName">Web Realtime Map</string>
+    <string name="realtimeMapURL">/realtime.html</string>
+
+    <!-- Messages -->
+    <string name="selfGroupName">Me</string>
+    <string name="text_quickSendMessage">Follow me real-time! </string>
+    <string name="text_quickSendMessageExample">Follow my location for 15 minutes #loco15</string>
+    <string name="text_quickSendDuration">Loco sharing for %sm: </string>
+    <string name="contact_no_details">No contact information, choose another.</string>
+    <string name="choose_contact_detail_title">Choose Preferred Method</string>
+    <string name="email_provider_title">Share using</string>
+    <string name="text_sent_confirmation">Text Message Sent.</string>
+    <string name="network_unavailable_error">Network not available</string>
+    <string name="type_message">Type a message</string>
+
+    <!-- CommandLine Tool -->
+    <string name="commandLinePersona">Kursor</string>
+
+
+</resources>

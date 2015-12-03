@@ -1,0 +1,78 @@
+apply plugin: 'android'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'joelocoKey'
+            keyPassword 'mk7GT!w00t'
+            storeFile file('/home/joechang/keystore/android.jks')
+            storePassword 'd13tC0k3!'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+    defaultConfig {
+        applicationId "com.joechang.loco"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "6g"
+    }
+    productFlavors {
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+    // Seems to be required in order for junit to run as we depend on log and textutils?
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile project(':model')
+    compile project(':client')
+    compile project(':android-smsmms')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:21.0.+'
+    compile 'com.android.support:support-v13:21.0.+'
+    compile 'com.google.android.gms:play-services:6.+'
+    compile 'com.facebook.android:facebook-android-sdk:3.20.0'
+    compile(name: 'identitytoolkit-api11', ext: 'aar')
+    compile(name: 'identitytoolkit_fb', ext: 'jar')
+    compile 'com.firebase:firebase-client-android:2.2.4'
+    compile 'com.firebase:firebase-client-jvm:2.2.4'
+    compile('com.firebase:geofire:1.1.0') {
+        exclude module: 'firebase-client-android'
+        exclude module: 'firebase-client-jvm'
+    }
+    compile 'commons-io:commons-io:+'
+    compile 'com.loopj.android:android-async-http:1.4.5'
+    compile 'com.doomonafireball.betterpickers:library:1.5.5'
+    compile 'com.sothree.slidinguppanel:library:3.0.0'
+    //compile 'com.klinkerapps:android-smsmms:1.0.1'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+}

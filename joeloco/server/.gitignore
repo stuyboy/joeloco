@@ -1,0 +1,7 @@
+loco*.jar
+loco*.pid
+**/.idea
+**/build/**
+logs/**
+userlogs/**
+.gradle/

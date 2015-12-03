@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Strange SparseArrays check -->
+    <issue id="UseSparseArrays" severity="ignore" />
+
+    <!-- I don't mind unused resources -->
+    <issue id="UnusedResources" severity="ignore" />
+</lint>
